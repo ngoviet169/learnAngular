@@ -11,4 +11,8 @@ export class WordComponent {
     vn = 'Xin Chào';
     imageUrl = 'https://angular.io/assets/images/logos/angular/shield-large.svg';
     forget = false;
+
+    toggleForget() {
+        this.forget = !this.forget;
+    }
 }
