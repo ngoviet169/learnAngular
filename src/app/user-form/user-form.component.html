@@ -1,3 +1,6 @@
-<input placeholder="Enter username" [(ngModel)]="name" #txtUsername>
-<h3>Your name is: {{ name }}</h3>
-<code>{{txtUsername.value | json}}</code>
+<input placeholder="Enter username" [(ngModel)]="name">
+<h3 [style.color]="isHightlight ? 'red' : 'black'">
+    Your name is: {{ name }}
+</h3>
+<div [class]="isHightlight ? 'circle' : 'square'"></div>
+<div [class.circle]="isHightlight"></div>
